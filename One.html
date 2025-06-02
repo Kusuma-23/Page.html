@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Welcome to My Profile Page</title>
+  <style>
+    body {
+      background-color: #e6f7ff;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 20px;
+    }
+
+    h1 {
+      color: darkblue;
+      text-align: center;
+      font-size: 24px;
+    }
+
+    .profile-photo {
+      display: block;
+      margin: 0 auto;
+      border-radius: 8px;
+      width: 120px;
+    }
+
+    p {
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .hello-section {
+      text-align: center;
+      margin: 10px 0 20px 0;
+    }
+
+    .hello-section button {
+      padding: 6px 10px;
+      background-color: #f2f2f2;
+      border: 1px solid #666;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .hello-section button:hover {
+      background-color: #ddd;
+    }
+
+    form {
+      width: 220px;
+      margin: 0 auto;
+      background-color: white;
+      padding: 12px;
+      border-radius: 8px;
+      box-shadow: 0 0 6px rgba(0,0,0,0.1);
+      font-size: 13px;
+    }
+
+    form h2 {
+      text-align: left;
+      color: darkblue;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    label {
+      display: block;
+      margin-top: 6px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 5px;
+      margin-top: 3px;
+      font-size: 13px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button[type="submit"] {
+      margin-top: 10px;
+      background-color: white;
+      border: 1px solid black;
+      padding: 5px 8px;
+      font-size: 13px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to My Profile Page</h1>
+  <img src="M.Kusuma.jpg" alt="Profile Photo" class="profile-photo" />
+
+  <p>My name is Mamidi Kusuma. I am in IV year. I love Watching movies and dancing in my free time.</p>
+
+  <div class="hello-section">
+    <button onclick="sayHello()">Say Hello</button>
+  </div>
+
+  <form>
+    <h2>Contact Me</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" />
+
+    <label for="message">Message:</label>
+    <textarea id="message" rows="3"></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    function sayHello() {
+      alert("Hello!, Thanks for visiting my profile");
+    }
+  </script>
+
+</body>
+</html>
